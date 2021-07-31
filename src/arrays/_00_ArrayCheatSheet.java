@@ -20,7 +20,7 @@ public class _00_ArrayCheatSheet {
 			}
 		*/
 		//6. make an array of 50 integers
-			int[] fifteyRandoNums = {49};
+		int[] fifteyRandoNums = new int[50];
 		//7. use a for loop to make every value of the integer array a random number
 			Random rando = new Random();
 			for(int i = 0; fifteyRandoNums.length>i; i++) {
@@ -28,14 +28,28 @@ public class _00_ArrayCheatSheet {
 			}
 		//8. without printing the entire array, print only the smallest number in the array
 			int lowestNum = fifteyRandoNums[0];
-			for() {
+			for (int num = 0; num < fifteyRandoNums.length; num++) {
 				if(fifteyRandoNums[num] < lowestNum) {
-					fifteyRandoNums[num] = lowestNum;
+					lowestNum=fifteyRandoNums[num];
 				}
 			}
+				
+			
 			System.out.println("Lowest Num: " + lowestNum);
+			
+			
 		//9 print the entire array to see if step 8 was correct
-		
+		for (int e = 0; e < fifteyRandoNums.length; e++) {
+			System.out.println(fifteyRandoNums[e]);
+		}
 		//10. print the largest number in the array.
+		
+		int highNum = fifteyRandoNums[0];
+		for (int f = 0; f < fifteyRandoNums.length; f++) {
+			if(fifteyRandoNums[f] > highNum) {
+				highNum=fifteyRandoNums[f];
+			}
+		}
+		System.out.println("Highest Num: " + highNum);
 	}
 }
